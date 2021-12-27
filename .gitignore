@@ -79,6 +79,12 @@ target/
 /data/external
 /data/interim
 
+#exclude docs
+/docs
+
+#exclude references
+/references
+
 # Mac OS-specific storage files
 .DS_Store
 
