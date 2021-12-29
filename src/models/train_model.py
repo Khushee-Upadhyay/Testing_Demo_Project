@@ -14,8 +14,3 @@ def k_neighbours(xtrain, ytrain):
     knn.fit(xtrain, ytrain)
     return knn
 
-
-def decision_tree(xtrain, ytrain):
-    tree = DecisionTreeRegressor()
-    tree.fit(xtrain, ytrain)
-    return decision_tree

@@ -26,11 +26,10 @@ def load_processed_insurance_data():
 
 
 def save_train_test_data(Xtrain: pd.DataFrame, Ytrain: pd.DataFrame, Xtest: pd.DataFrame, Ytest: pd.DataFrame):
-    Xtrain.to_csv("data/model_training_data/training_data.csv")
-    Ytrain.to_csv("data/model_training_data/training_data_result.csv")
-    Xtest.to_csv("data/model_testing_data/testing_data.csv")
-    Ytest.to_csv("data/model_testing_data/testing_data_result.csv")
-    Ytest.to_csv("data/model_testing_data/testing_data_result.csv")
+    Xtrain.to_csv("data/model_training_data/training_data.csv", index=False)
+    Ytrain.to_csv("data/model_training_data/training_data_result.csv", index=False)
+    Xtest.to_csv("data/model_testing_data/testing_data.csv", index=False)
+    Ytest.to_csv("data/model_testing_data/testing_data_result.csv", index=False)
     return
 
 
