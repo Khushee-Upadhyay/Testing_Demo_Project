@@ -2,9 +2,14 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 
 
+def load_data_from_path(filepath):
+    df = pd.read_csv(filepath)
+    return df
+
+
 def load_insurance_data():
     input_path = "data/raw/insurance.csv"
-    df = pd.read_csv(input_path)
+    df = load_data_from_path(input_path)
     return df
 
 
@@ -16,7 +21,7 @@ def save_insurance_data(df: pd.DataFrame):
 
 def load_processed_insurance_data():
     input_path = "data/processed/processed_insurance_data.csv"
-    df = pd.read_csv(input_path)
+    df = load_data_from_path(input_path)
     return df
 
 
@@ -37,3 +42,4 @@ def split_train_test_data():
     y = df["charges"]
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
     save_train_test_data(X_train, y_train, X_test, y_test)
+    return X_train, y_train, X_test, y_test
