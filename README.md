@@ -34,9 +34,9 @@ Project Organization
     │   │   └── train_model.py
     |
     ├── tests
-    |   |
-    |   │   └── pre_train_tests.py  <- Pre-train test script
-    |   │   └── post_train_tests.py  <- Post-train test script
+        |
+        └── pre_train_tests.py  <- Pre-train test script
+        └── post_train_tests.py  <- Post-train test script
 
 
 --------
