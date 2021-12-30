@@ -4,7 +4,7 @@ Pre-train and Post-train tests for insurance prediction problem
 Demo project for writing test cases for Machine Learning problems.
 
 
-Dataset: "<a target="_blank" href="https://www.kaggle.com/mirichoi0218/insurance">Medical Cost Personal Datasets</a>
+Dataset: <a target="_blank" href="https://www.kaggle.com/mirichoi0218/insurance">Medical Cost Personal Datasets</a>
 
 
 
