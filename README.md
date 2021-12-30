@@ -33,7 +33,7 @@ Project Organization
     │   │   ├── predict_model.py
     │   │   └── train_model.py
     |
-    ├── tests
+    └── tests
         |
         └── pre_train_tests.py  <- Pre-train test script
         └── post_train_tests.py  <- Post-train test script
