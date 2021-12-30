@@ -11,7 +11,7 @@ Dataset: <a target="_blank" href="https://www.kaggle.com/mirichoi0218/insurance"
 Project Organization
 ------------
 
-    ├── LICENSE
+    
     ├── README.md          <- The top-level README file
     ├── data
     │   ├── model_testing_data       <- Data for validation
