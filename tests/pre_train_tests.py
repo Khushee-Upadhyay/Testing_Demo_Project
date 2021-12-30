@@ -4,6 +4,7 @@ from src.data.make_dataset import data_preprocessing
 from src.util.csv_data_operations import split_train_test_data
 from src.models.train_model import linear_regression, k_neighbours
 from src.models.predict_model import predict_on_test_data
+import pytest_check as check
 
 
 @pytest.fixture
@@ -37,8 +38,10 @@ def test_data_leak(data_preparation):
 def test_predicted_output_shape(linear_regression_prediction, k_neighbors_prediction):
     print("Linear regression")
     xtest, ypred = linear_regression_prediction
-    assert ypred.shape == (xtest.shape[0], 1)
+    check.equal(ypred.shape, (xtest.shape[0], ))
+    # assert ypred.shape == (xtest.shape[0], 1)
     print("K nearest neighbours")
     xtest, ypred = k_neighbors_prediction
-    assert ypred.shape == (xtest.shape[0], )
+    check.equal(ypred.shape, (xtest.shape[0], ))
+    # assert ypred.shape == (xtest.shape[0], )
 
