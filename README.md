@@ -1,55 +1,42 @@
-testing_insurance_prediction
+Pre-train and Post-train tests for insurance prediction problem
 ==============================
 
-Demo ML project for testing
+Demo project for writing test cases for Machine Learning problems.
+
+
+Dataset: <a target="_blank" href="https://www.kaggle.com/mirichoi0218/insurance">Medical Cost Personal Datasets</a>
+
+
 
 Project Organization
 ------------
 
     ├── LICENSE
-    ├── Makefile           <- Makefile with commands like `make data` or `make train`
-    ├── README.md          <- The top-level README for developers using this project.
+    ├── README.md          <- The top-level README file
     ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
-    │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
-    │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
-    │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
-    │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-    │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
+    │   ├── model_testing_data       <- Data for validation
+    │   ├── model_training_data        <- Data for training models
+    │   ├── processed      <- The final processed data set
+    │   └── raw            <- The original data dump.
     │
     ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
     │                         generated with `pip freeze > requirements.txt`
     │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
     ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
     │   │
-    │   ├── data           <- Scripts to download or generate data
-    │   │   └── make_dataset.py
+    │   ├── data          
+    │   │   └── make_dataset.py  <- Scripts to generate pre-processed data
     │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
     │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
-    │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize.py
-    │
-    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
+    │   └── models         <- Scripts to train models and then use trained models to make
+    │       │                 predictions
+    │       ├── predict_model.py
+    │       └── train_model.py
+    |    
+    └── tests
+        |
+        ├── pre_train_tests.py  <- Pre-train test script
+        └── post_train_tests.py  <- Post-train test script
 
 
 --------
