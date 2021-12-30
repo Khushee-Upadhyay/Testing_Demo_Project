@@ -17,7 +17,7 @@ Project Organization
     │   ├── model_testing_data       <- Data for validation
     │   ├── model_training_data        <- Data for training models
     │   ├── processed      <- The final processed data set
-    │   └── raw            <- The original, immutable data dump.
+    │   └── raw            <- The original data dump.
     │
     ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
     │                         generated with `pip freeze > requirements.txt`
@@ -28,14 +28,14 @@ Project Organization
     │   │   └── make_dataset.py  <- Scripts to generate pre-processed data
     │   │
     │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
-    |
+    │   └── models         <- Scripts to train models and then use trained models to make
+    │       │                 predictions
+    │       ├── predict_model.py
+    │       └── train_model.py
+    |    
     └── tests
         |
-        └── pre_train_tests.py  <- Pre-train test script
+        ├── pre_train_tests.py  <- Pre-train test script
         └── post_train_tests.py  <- Post-train test script
 
 
