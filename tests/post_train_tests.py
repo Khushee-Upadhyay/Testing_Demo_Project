@@ -1,6 +1,6 @@
 import numpy as np
 import pytest
-
+import pytest_check as check
 from src.data.make_dataset import data_preprocessing
 from src.models.train_model import linear_regression, k_neighbours
 
@@ -24,7 +24,7 @@ def return_models(data_preparation):
 def test_sex_invariance(return_models):
     models = return_models
     for model in models:
-        print("Checking for" + str(model.__class__.__name__))
+        print("Checking for " + str(model.__class__.__name__))
         female_sample = [19, 1, 27.9, 0, 1, 2, 1, 1]
         male_sample = [19, 0, 27.9, 0, 1, 2, 1, 1]
         result_female_sample = model.predict(np.array(female_sample).reshape(1, -1))
