@@ -15,7 +15,7 @@ def load_insurance_data():
 
 def save_insurance_data(df: pd.DataFrame):
     output_path = "data/processed/processed_insurance_data.csv"
-    df.to_csv(output_path)
+    df.to_csv(output_path, index=False)
     return
 
 
