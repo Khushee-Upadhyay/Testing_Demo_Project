@@ -32,6 +32,7 @@ def k_neighbors_prediction(data_preparation):
 def test_data_leak(data_preparation):
     xtrain, ytrain, xtest, ytest = data_preparation
     concat_df = pd.concat([xtrain, xtest])
+    concat_df.drop_duplicates(inplace=True)
     assert concat_df.shape[0] == xtrain.shape[0] + xtest.shape[0]
 
 
