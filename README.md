@@ -41,4 +41,14 @@ Project Organization
 
 --------
 
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. </small></p>
+
+References
+==============================
+
+- [How to Test Machine Learning Code and Systems](https://eugeneyan.com/writing/testing-ml/)
+- [Effective testing for machine learning systems](https://www.jeremyjordan.me/testing-ml/)
+- [How to Test Machine Learning Models](https://deepchecks.com/how-to-test-machine-learning-models/)
+- [Data Leakage in Machine Learning](https://towardsdatascience.com/data-leakage-in-machine-learning-10bdd3eec742)
+- [Medical Costs Personal Dataset Notebooks](https://www.kaggle.com/mirichoi0218/insurance/code)
+
