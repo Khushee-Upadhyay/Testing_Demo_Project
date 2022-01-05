@@ -6,6 +6,8 @@ Demo project for writing test cases for Machine Learning problems.
 
 Dataset: <a target="_blank" href="https://www.kaggle.com/mirichoi0218/insurance">Medical Cost Personal Datasets</a>
 
+To know more about how to write test cases for Machine learning systems, click <a target="_blank" href="https://www.analyticsvidhya.com/blog/2022/01/writing-test-cases-for-machine-learning/">here</a>.
+
 
 
 Project Organization
